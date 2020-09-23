@@ -29,6 +29,30 @@ const Gradient = styled(LinearGradient)`
   height: 100%;
 `;
 
+const imagesRecommend = [
+  require("../assets/movie1.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie1.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie1.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie1.jpg"),
+  require("../assets/movie4.jpg"),
+];
+
+const imagesTop10 = [
+  require("../assets/movie1.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+  require("../assets/movie4.jpg"),
+];
+
 const Home = () => {
   return (
     <>
@@ -56,8 +80,8 @@ const Home = () => {
           </Gradient>
         </Poster>
         {/* ==Movie== */}
-        <Movie />
-        <Movie />
+        <Movie label={"recomend"} images={imagesRecommend} />
+        <Movie label={"Top 10"} images={imagesTop10} />
       </Container>
     </>
   );
